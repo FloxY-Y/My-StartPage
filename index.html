@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start Page</title>
 
+    <link rel="stylesheet" href="./media/css/fontello.css">
     <link rel="stylesheet" href="./media/css/style.css">
 </head>
+
 <body>
+    <main>
+        <div class="logo">FireFox</div>
+
+        <form action="https://duckduckgo.com/" method="get">
+            <div class="search">
+                <input type="search" autocomplete="off" name="q" id="search">
+                <input type="reset" value="&#xe014;">
+                <input type="submit" value="&#xE006;">
+            </div>
+        </form>
+
+        <div class="option">
+            <div class="opt"><i class="i-mdn"></i></div>
+            <div class="opt"><i class="i-arch-linux"></i></div>
+            <div class="opt"><i class="i-github"></i></div>
+            <div class="opt"><i class="i-reddit"></i></div>
+            <div class="opt"><i class="i-youtube"></i></div>
+            <div class="opt"><i class="i-stackoverflow"></i></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="license">
+            This page is under the GNU-GPL 3 license
+            <img src="./media/img/gpl-v3-logo.svg" alt="">
+        </div>
+    </footer>
 
     <script src="./media/js/main.js"></script>
 </body>
+
 </html>
