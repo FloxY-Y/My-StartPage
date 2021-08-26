@@ -51,88 +51,61 @@
   content: '\e000';
 }
 
-/* '' */
-
 .i-youtube:before {
   content: '\e001';
 }
-
-/* '' */
 
 .i-duckduckgo:before {
   content: '\e002';
 }
 
-/* '' */
-
 .i-stackoverflow:before {
   content: '\e003';
 }
-
-/* '' */
 
 .i-repo-github:before {
   content: '\e004';
 }
 
-/* '' */
-
 .i-arch-linux:before {
   content: '\e005';
 }
-
-/* '' */
 
 .i-search:before {
   content: '\e006';
 }
 
-/* '' */
-
 .i-github:before {
   content: '\e007';
 }
-
-/* '' */
 
 .i-git:before {
   content: '\e008';
 }
 
-/* '' */
-
 .i-html-5:before {
   content: '\e009';
+  color: #f39c12;
 }
-
-/* '' */
 
 .i-css-3:before {
   content: '\e010';
+  color: #3498db;
 }
-
-/* '' */
 
 .i-js:before {
   content: '\e011';
+  color: #ff0;
 }
-
-/* '' */
 
 .i-cog-circled:before {
   content: '\e012';
 }
 
-/* '' */
-
 .i-mdn:before {
   content: '\e013';
 }
 
-/* '' */
-
 .i-cancel:before {
   content: '\e014';
 }
-
-/* '' */

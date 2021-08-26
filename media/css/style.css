@@ -6,6 +6,13 @@ body, html {
     margin: 0;
     background-color: #3b4252;
     color: #eceff4;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo {
@@ -65,22 +72,43 @@ input[type="submit"]:hover {
 }
 
 .option {
-    /* SOON */
-    display: none;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.option .opt {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    background-color: #0005;
+    border-radius: 15px;
+}
+
+.option i {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
 }
 
 footer .license {
     display: flex;
     align-items: center;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    justify-content: center;
 }
 
 footer img {
     height: 50px;
+}
+
+footer > i {
+    font-size: 30px;
 }
