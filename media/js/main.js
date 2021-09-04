@@ -37,8 +37,11 @@ function serviceSelect(e) {
         serviceSelected = e;
         document.querySelector('[data-service="' + e + '"]').classList.add("selected");
     }
+    document.querySelector('input[type="search"]').focus();
 }
 
 document.forms[0].addEventListener("submit", () => {
     document.forms[0][0].value = "!" + serviceSelected + " " + document.forms[0][0].value;
 });
+
+document.querySelector('input[type="search"]').focus();
