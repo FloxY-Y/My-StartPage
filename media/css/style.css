@@ -1,5 +1,11 @@
 * {
     font-family: sans-serif;
+    flex-shrink: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #d8dee9;
 }
 
 body,
@@ -107,8 +113,45 @@ input[type="submit"]:hover {
     margin-bottom: 20px;
 }
 
+input#footer {
+    display: none;
+}
+
+label[for="footer"] {
+    display: block;
+    position: relative;
+    top: 0;
+    transition: .2s;
+}
+
+input#footer:checked~label {
+    top: calc(100% - 30px);
+}
+
+input#footer~label::before {
+    font-family: fontello;
+    content: '\e015';
+    font-size: 30px;
+}
+
+input#footer:checked~label::before {
+    content: '\e016';
+}
+
 footer {
+    position: relative;
     text-align: center;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    transition: .2s;
+    top: 0;
+}
+
+input#footer:checked~.content {
+    top: 100%;
 }
 
 footer .license {
@@ -121,7 +164,7 @@ footer img {
     height: 50px;
 }
 
-footer>i {
+footer i {
     font-size: 30px;
 }
 

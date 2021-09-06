@@ -1,3 +1,4 @@
+// Konami Code System
 window.addEventListener("keyup", FUCK_GIT);
 
 let keyNumber = 0;
@@ -20,12 +21,14 @@ function FUCK_GIT(key) {
     }
 }
 
+// Service System
 let button_list = document.querySelectorAll(".opt");
 button_list.forEach(e => { e.addEventListener("click", () => serviceSelect(e.attributes["data-service"].value)); });
 
 let serviceSelected = "ddg";
 
 /**
+ * Select a service
  * @param {MouseEvent} e 
  */
 function serviceSelect(e) {
@@ -40,8 +43,22 @@ function serviceSelect(e) {
     document.querySelector('input[type="search"]').focus();
 }
 
+// use service when user search
 document.forms[0].addEventListener("submit", () => {
     document.forms[0][0].value = "!" + serviceSelected + " " + document.forms[0][0].value;
 });
 
 document.querySelector('input[type="search"]').focus();
+
+// Footer System
+document.querySelector("input#footer").addEventListener("change", e => { localStorage.setItem('footer', e.target.checked); });
+
+// for save footer state
+let footerState = localStorage.getItem("footer");
+
+if (footerState == null) {
+    localStorage.setItem("footer", false);
+    footerState = false;
+}
+
+document.querySelector("input#footer").checked = footerState == 'true' ? true : false;
