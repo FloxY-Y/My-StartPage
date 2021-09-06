@@ -19,7 +19,10 @@
 }
 */
 
-[class^="i-"]:before, [class*=" i-"]:before, input[type="reset"], input[type="submit"] {
+[class^="i-"]:before,
+[class*=" i-"]:before,
+input[type="reset"],
+input[type="submit"] {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -108,4 +111,12 @@
 
 .i-cancel:before {
   content: '\e014';
+}
+
+.i-angle-down:before {
+  content: '\e015';
+}
+
+.i-angle-up:before {
+  content: '\e016';
 }
