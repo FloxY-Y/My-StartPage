@@ -97,7 +97,15 @@ input[type="submit"]:hover {
     width: 200px;
     background-color: #0005;
     border-radius: 15px;
+    white-space: nowrap;
+    padding: 10px;
     transition: .1s;
+}
+
+.option .opt p {
+    overflow: hidden;
+    text-overflow: "...";
+    margin: 0;
 }
 
 .option .opt:hover {
@@ -200,4 +208,19 @@ footer i {
     height: 40vh;
     width: 40vh;
     background-color: #fff0;
+}
+
+@media screen and (max-width: 1000px) {
+    #search {
+        width: calc(80vw - 100px);
+    }
+
+    .option .opt {
+        height: 100px;
+        width: 100px;
+    }
+
+    .option i {
+        font-size: 30px;
+    }
 }
